@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tender Summary — SEED</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+
+<body>
+    <div class="app-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <rect width="28" height="28" rx="6" fill="#0F172A" />
+                    <rect x="6" y="6" width="4" height="16" rx="2" fill="white" />
+                    <rect x="13" y="6" width="4" height="16" rx="2" fill="white" opacity="0.5" />
+                    <rect x="20" y="6" width="2" height="16" rx="1" fill="white" opacity="0.3" />
+                </svg>
+                seed
+            </div>
+            <div class="org-selector">
+                <div class="org-selector-left">
+                    <div class="org-avatar">J</div>
+                    <div>
+                        <div class="org-name">J.C. V V</div>
+                        <div class="org-sub">1 organization</div>
+                    </div>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5 7l3 3 3-3" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="projects.html" class="sidebar-link active">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M2 5a2 2 0 012-2h4l2 2h4a2 2 0 012 2v7a2 2 0 01-2 2H4a2 2 0 01-2-2V5z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    Projects
+                </a>
+                <a href="resources.html" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <rect x="2" y="2" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M6 6h6M6 9h6M6 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    Resources
+                </a>
+                <a href="workbook-templates.html" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M4 2h10a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm2 4h6M6 9h6M6 12h4"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Workbook Templates
+                </a>
+            </nav>
+            <div class="sidebar-unlimited" style="margin:12px;">
+                <div class="sidebar-unlimited-header">
+                    <div class="unlimited-dot"></div>
+                    <div class="sidebar-unlimited-title">Unlimited AI Analysis</div>
+                </div>
+                <div class="sidebar-unlimited-desc">No limits — analyse freely</div>
+            </div>
+            <div style="flex:1;"></div>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-footer-link"><svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M8.5 7.5v4M8.5 5.5a.5.5 0 110 1 .5.5 0 010-1" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>Help Center</a>
+                <a href="settings.html" class="sidebar-footer-link"><svg width="17" height="17" viewBox="0 0 17 17"
+                        fill="none">
+                        <path d="M8.5 11a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="currentColor" stroke-width="1.5" />
+                        <path
+                            d="M13.5 8.5c0-.4.2-.8.6-1l.3-.2a.9.9 0 000-1.6l-.3-.2a1.1 1.1 0 01-.6-1V5a.9.9 0 00-.9-.9h-.1a1.1 1.1 0 01-1-.6l-.2-.3a.9.9 0 00-1.6 0l-.2.3a1.1 1.1 0 01-1 .6H8a.9.9 0 00-.9.9v.1c0 .4-.2.8-.6 1l-.3.2a.9.9 0 000 1.6l.3.2c.4.2.6.6.6 1V12a.9.9 0 00.9.9h.1c.4 0 .8.2 1 .6l.2.3a.9.9 0 001.6 0l.2-.3c.2-.4.6-.6 1-.6H12a.9.9 0 00.9-.9v-.1z"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>Settings</a>
+            </div>
+            <div class="sidebar-user">
+                <div class="user-avatar">K</div>
+                <div class="user-info">
+                    <div class="user-name">Koketso Speco</div>
+                    <div class="user-email">speconasdaq@gmail.com</div>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M5 7l3 3 3-3" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="page-content">
+
+                <!-- Top action bar -->
+                <div class="breadcrumb">
+                    <a href="project-detail.html?id=proj-001">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M9 3L5 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Back to Project
+                    </a>
+                </div>
+
+                <div class="tender-page-header">
+                    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+                        <div>
+                            <h1 style="font-size:28px;font-weight:800;letter-spacing:-0.03em;">Tender Summary</h1>
+                        </div>
+                        <span class="badge badge-green" style="padding:6px 14px;font-size:12px;">Analysis
+                            Complete</span>
+                        <button class="btn btn-secondary" style="padding:8px 16px;">↻ Re-run Analysis</button>
+                    </div>
+                    <div class="tender-actions">
+                        <span class="tender-tip">Tip: For faster analysis, split large files by trade or package.</span>
+                        <button class="btn btn-secondary">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M7.5 10V2M4 7l3.5 3.5L11 7" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2 13h11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            Export
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tender layout: left nav + main content -->
+                <div class="tender-layout">
+
+                    <!-- Left nav panel -->
+                    <div class="tender-sidebar-panel">
+                        <div class="tender-sidebar-title">Tender Summary</div>
+                        <div class="tender-sidebar-meta">
+                            <div class="tender-sidebar-meta-item">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <rect x="1" y="1" width="12" height="12" rx="2" stroke="#64748B"
+                                        stroke-width="1.2" />
+                                </svg>
+                                Commercial Construction Project
+                            </div>
+                            <div class="tender-sidebar-meta-item">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <circle cx="7" cy="5.5" r="3" stroke="#64748B" stroke-width="1.2" />
+                                    <path d="M4 10.5s.5 2 3 2 3-2 3-2" stroke="#64748B" stroke-width="1.2"
+                                        stroke-linecap="round" />
+                                </svg>
+                                ABC Developer
+                            </div>
+                            <div class="tender-sidebar-meta-item">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path
+                                        d="M7 1C5.1 1 3.5 2.6 3.5 4.5 3.5 7.5 7 13 7 13s3.5-5.5 3.5-8C10.5 2.6 8.9 1 7 1z"
+                                        stroke="#64748B" stroke-width="1.2" />
+                                </svg>
+                                Johannesburg, South Africa
+                            </div>
+                        </div>
+
+                        <nav class="tender-nav" id="tenderNav">
+                            <div class="tender-nav-item active" onclick="showSection('overview', this)">
+                                <div class="tender-nav-item-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <rect x="1" y="1" width="13" height="13" rx="2" stroke="currentColor"
+                                            stroke-width="1.3" />
+                                        <path d="M4 4h7M4 7h7M4 10h4" stroke="currentColor" stroke-width="1.3"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Project Overview
+                                </div>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M5 9l4-4" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" />
+                                    <path d="M9 9V5H5" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="tender-nav-item" onclick="showSection('submission', this)">
+                                <div class="tender-nav-item-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <path
+                                            d="M4 2h7a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm2 5h3M6 8h2"
+                                            stroke="currentColor" stroke-width="1.3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    Submission Req...
+                                </div>
+                                <span class="tender-nav-count">9</span>
+                            </div>
+                            <div class="tender-nav-item" onclick="showSection('drawings', this)">
+                                <div class="tender-nav-item-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <path d="M3 3l9 9M3 12l9-9" stroke="currentColor" stroke-width="1.3"
+                                            stroke-linecap="round" />
+                                        <rect x="1" y="1" width="13" height="13" rx="2" stroke="currentColor"
+                                            stroke-width="1.3" />
+                                    </svg>
+                                    Drawings
+                                </div>
+                                <span class="tender-nav-count">10</span>
+                            </div>
+                            <div class="tender-nav-item" onclick="showSection('boq', this)">
+                                <div class="tender-nav-item-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <rect x="1" y="1" width="13" height="13" rx="2" stroke="currentColor"
+                                            stroke-width="1.3" />
+                                        <path d="M4 5h7M4 7.5h7M4 10h4" stroke="currentColor" stroke-width="1.3"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Bill of Quantities
+                                </div>
+                                <span class="tender-nav-count">14</span>
+                            </div>
+                            <div class="tender-nav-item" onclick="showSection('requirements', this)">
+                                <div class="tender-nav-item-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <path d="M13 4L6 11l-3-3" stroke="currentColor" stroke-width="1.3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Requirements ...
+                                </div>
+                                <span class="tender-nav-count">44</span>
+                            </div>
+                            <div class="tender-nav-item" onclick="showSection('contract', this)">
+                                <div class="tender-nav-item-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <circle cx="7.5" cy="7.5" r="6" stroke="currentColor" stroke-width="1.3" />
+                                        <path d="M7.5 5v3l2 1.5" stroke="currentColor" stroke-width="1.3"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Contract
+                                </div>
+                            </div>
+                            <div class="tender-nav-item" onclick="showSection('rfis', this)">
+                                <div class="tender-nav-item-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <circle cx="7.5" cy="7.5" r="6" stroke="currentColor" stroke-width="1.3" />
+                                        <path d="M7.5 5v2.5m0 2h.01" stroke="currentColor" stroke-width="1.3"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    RFIs / Clarificat...
+                                </div>
+                                <span class="tender-nav-count">28</span>
+                            </div>
+                            <div class="tender-nav-item" onclick="showSection('risks', this)">
+                                <div class="tender-nav-item-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <path d="M7.5 2L2 13h11L7.5 2z" stroke="currentColor" stroke-width="1.3"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 6v3m0 2h.01" stroke="currentColor" stroke-width="1.3"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Risks & Opport...
+                                </div>
+                                <span class="tender-nav-count">18</span>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- Main content area -->
+                    <div class="tender-main">
+
+                        <!-- ── PROJECT OVERVIEW ── -->
+                        <div class="tender-section active" id="section-overview">
+                            <div
+                                style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;">
+                                <div>
+                                    <h2 style="font-size:20px;font-weight:700;margin-bottom:4px;">Project Overview</h2>
+                                    <p style="font-size:13px;color:#64748B;">Comprehensive analysis of the tender
+                                        requirements</p>
+                                </div>
+                                <span class="found-badge">✓ Found &amp; verified</span>
+                            </div>
+                            <div class="card" style="padding:24px;margin-bottom:16px;">
+                                <p style="font-size:14px;color:#334155;line-height:1.7;">Design and construction of a
+                                    new 3-storey sustainable commercial office building (approx. 12,000 m² GFA) for the
+                                    City of Johannesburg at 45 Sandton Drive, Johannesburg. Works include base
+                                    build and selected tenant fit-out areas, targeting a 5-Star Green Star rating. Scope
+                                    also includes civil/structural works, façade, building services, internal fit-out,
+                                    and external works such as carparking and landscaping (Invitation to Tender.pdf Page
+                                    1; Scope of Works.pdf).</p>
+                            </div>
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <div class="info-card-icon"><svg width="18" height="18" viewBox="0 0 18 18"
+                                            fill="none">
+                                            <rect x="2" y="2" width="14" height="14" rx="2" stroke="#94A3B8"
+                                                stroke-width="1.3" />
+                                        </svg></div>
+                                    <div class="info-card-label">PROJECT TYPE</div>
+                                    <div class="info-card-value">Building – Design &amp; Construction (Commercial Office
+                                        Base Build + Partial Fitout); Building – New Build (Civil/Structural, Façade,
+                                        Building Services, Fitout &amp; External Works)</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-icon"><svg width="18" height="18" viewBox="0 0 18 18"
+                                            fill="none">
+                                            <rect x="2" y="2" width="14" height="14" rx="2" stroke="#94A3B8"
+                                                stroke-width="1.3" />
+                                            <path d="M6 2v2M12 2v2M2 8h14" stroke="#94A3B8" stroke-width="1.3"
+                                                stroke-linecap="round" />
+                                        </svg></div>
+                                    <div class="info-card-label">DURATION</div>
+                                    <div class="info-card-value">Tender closes: 4:00 PM, 30 September 2025 · Works
+                                        commence: 1 November 2025 · Practical completion: 30 November 2026</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-icon"><svg width="18" height="18" viewBox="0 0 18 18"
+                                            fill="none">
+                                            <path d="M9 2C6.8 2 5 3.8 5 6c0 3.3 4 9 4 9s4-5.7 4-9c0-2.2-1.8-4-4-4z"
+                                                stroke="#94A3B8" stroke-width="1.3" />
+                                        </svg></div>
+                                    <div class="info-card-label">LOCATION</div>
+                                    <div class="info-card-value">45 Sandton Drive, Johannesburg</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-icon"><svg width="18" height="18" viewBox="0 0 18 18"
+                                            fill="none">
+                                            <path d="M4 2h10a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2z"
+                                                stroke="#94A3B8" stroke-width="1.3" />
+                                        </svg></div>
+                                    <div class="info-card-label">CONTRACT MODEL</div>
+                                    <div class="info-card-value">AS 4000 General Conditions of Contract (Principal: City
+                                        of Melbourne Council; Contractor: ABC Constructions Pty Ltd)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ── SUBMISSION REQUIREMENTS ── -->
+                        <div class="tender-section" id="section-submission">
+                            <div class="section-header-navy">
+                                <div class="section-header-title">📋 Submission Completeness Checklist</div>
+                                <div class="section-header-desc">Ensure all required documents are prepared and
+                                    submitted before the deadline</div>
+                            </div>
+                            <div class="info-grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:20px;">
+                                <div class="info-card">
+                                    <div class="info-card-label">CLOSING DATE</div>
+                                    <div class="info-card-value">4:00 PM, 30 September 2025 (also stated as 4:00 PM,
+                                        30th September 2025).</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-label">SUBMISSION METHOD</div>
+                                    <div class="info-card-value">City of Johannesburg Procurement Portal. Invitation to
+                                        Tender also requires two hard copies and one electronic copy.</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-label">REQUIRED ITEMS</div>
+                                    <div class="info-card-value">Conflicting counts stated: 5 required items (Invitation
+                                        to Tender) and 7 required items (Tender Returnable Schedule).</div>
+                                </div>
+                            </div>
+                            <h3 style="font-size:16px;font-weight:700;margin-bottom:4px;">Required Submission Components
+                            </h3>
+                            <p style="font-size:13px;color:#64748B;margin-bottom:16px;">Check each item against your
+                                actual submission files</p>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Required</th>
+                                            <th>Document</th>
+                                            <th>Description</th>
+                                            <th>Reference</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="submissionTable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- ── DRAWINGS ── -->
+                        <div class="tender-section" id="section-drawings">
+                            <div class="section-header-green">
+                                <div class="section-header-title">📐 Drawing Summary</div>
+                                <div class="section-header-desc">Executive summary, key quantities, and pricing impacts
+                                    from drawings</div>
+                            </div>
+                            <div class="card" style="padding:24px;margin-bottom:20px;">
+                                <div
+                                    style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+                                    <div style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <path d="M4 2h8a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2z"
+                                                stroke="#64748B" stroke-width="1.3" />
+                                        </svg><strong style="font-size:15px;">Executive Summary</strong></div>
+                                    <span class="badge badge-gray">All Drawings, Pages 1–10</span>
+                                </div>
+                                <p style="font-size:13px;color:#475569;line-height:1.7;">The drawing set covers site
+                                    establishment, clearing and grubbing, bulk earthworks to form a berm (imported fill
+                                    placement and compaction), and excavation of a 2-ft (approx 600mm) deep sediment
+                                    basin, including temporary erosion and sediment controls, drainage tie-ins, and
+                                    reinstatement. Quantities are primarily driven by clearing extents, fill volumes for
+                                    the berm, sediment basin excavation/spoil management, and erosion-control materials
+                                    (silt fence, geotextile, aggregate, outlet protection). Several items require
+                                    contractor confirmation (exact haul distances, disposal locations, groundwater
+                                    conditions, existing services depths, and final set-out), representing key pricing
+                                    risk areas.</p>
+                            </div>
+                            <h3 style="font-size:15px;font-weight:700;margin-bottom:4px;">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    style="display:inline;vertical-align:middle;margin-right:4px;">
+                                    <path d="M7 1l1.5 3H12l-2.5 2 1 3L7 7.5 4.5 9l1-3L3 4h3.5L7 1z" fill="#64748B" />
+                                </svg>
+                                Key Quantities
+                            </h3>
+                            <div class="table-wrapper" style="margin-top:12px;">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Quantity</th>
+                                            <th>Source</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="drawingsTable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- ── BILL OF QUANTITIES ── -->
+                        <div class="tender-section" id="section-boq">
+                            <div class="section-header-blue">
+                                <div class="section-header-title">📊 Bill of Quantities</div>
+                                <div class="section-header-desc">14 trade groups extracted from tender documents</div>
+                            </div>
+                            <div id="boqContent"></div>
+                        </div>
+
+                        <!-- ── REQUIREMENTS REGISTER ── -->
+                        <div class="tender-section" id="section-requirements">
+                            <div
+                                style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+                                <div>
+                                    <h2 style="font-size:20px;font-weight:700;">Requirements Register <span
+                                            style="font-size:14px;font-weight:500;color:#64748B;">44 items</span></h2>
+                                    <p style="font-size:13px;color:#64748B;margin-top:2px;">Here is a complete list of
+                                        pricing requirements from the tender documents</p>
+                                </div>
+                                <button class="btn btn-secondary btn-sm">Export CSV</button>
+                            </div>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Description</th>
+                                            <th>Quantity Basis</th>
+                                            <th>Source</th>
+                                            <th>Citations</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="reqTable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- ── CONTRACT ── -->
+                        <div class="tender-section" id="section-contract">
+                            <div class="section-header-amber">
+                                <div class="section-header-title">📄 Contract Review</div>
+                                <div class="section-header-desc">Key contract terms, payment conditions, and risk items
+                                </div>
+                            </div>
+                            <div class="info-grid" style="grid-template-columns:repeat(2,1fr);margin-bottom:20px;">
+                                <div class="info-card">
+                                    <div class="info-card-label">CONTRACT MODEL</div>
+                                    <div class="info-card-value">AS 4000 – General Conditions of Contract</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-label">PRINCIPAL</div>
+                                    <div class="info-card-value">City of Johannesburg</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-label">PAYMENT TERMS</div>
+                                    <div class="info-card-value">Monthly progress claims assessed within 15 business
+                                        days; payment within 10 days of assessment</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-label">RETENTION</div>
+                                    <div class="info-card-value">5% of each progress claim, capped at 2.5% of contract
+                                        sum</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-card-label">DEFECTS LIABILITY</div>
+                                    <div class="info-card-value">12 months from practical completion</div>
+                                </div>
+                                <div class="info-card" style="background:#FEF2F2;border-color:#FECACA;">
+                                    <div class="info-card-label" style="color:#B91C1C;">⚠️ LIQUIDATED DAMAGES</div>
+                                    <div class="info-card-value" style="color:#7F1D1D;font-weight:700;">R8,500 per day
+                                        — Review recommended</div>
+                                </div>
+                            </div>
+                            <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;">Key Contract Risk Items</h3>
+                            <div id="contractRisks"></div>
+                        </div>
+
+                        <!-- ── RFIs ── -->
+                        <div class="tender-section" id="section-rfis">
+                            <div
+                                style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+                                <div>
+                                    <h2 style="font-size:20px;font-weight:700;">RFIs / Clarifications <span
+                                            style="font-size:14px;font-weight:500;color:#64748B;">28 items</span></h2>
+                                    <p style="font-size:13px;color:#64748B;margin-top:2px;">Questions to raise with the
+                                        principal before tender close</p>
+                                </div>
+                                <div style="display:flex;gap:8px;">
+                                    <button class="btn btn-secondary btn-sm">Export</button>
+                                    <button class="btn btn-primary btn-sm">+ Add RFI</button>
+                                </div>
+                            </div>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Question</th>
+                                            <th>Priority</th>
+                                            <th>Status</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="rfiTable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- ── RISKS ── -->
+                        <div class="tender-section" id="section-risks">
+                            <div
+                                style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+                                <div>
+                                    <h2 style="font-size:20px;font-weight:700;">Risks &amp; Opportunities <span
+                                            style="font-size:14px;font-weight:500;color:#64748B;">18 items</span></h2>
+                                    <p style="font-size:13px;color:#64748B;margin-top:2px;">AI-identified risks and
+                                        opportunities from the tender documents</p>
+                                </div>
+                                <div style="display:flex;gap:8px;">
+                                    <button class="btn btn-secondary btn-sm">Export</button>
+                                </div>
+                            </div>
+                            <div id="risksContainer"></div>
+                        </div>
+
+                    </div><!-- /tender-main -->
+                </div><!-- /tender-layout -->
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/data.js"></script>
+    <script>
+        const ta = SEED_DATA.tenderAnalysis['proj-001'];
+
+        // ── SUBMISSION TABLE ──
+        document.getElementById('submissionTable').innerHTML = ta.submissionRequirements.components.map(c => `
+    <tr>
+      <td>${c.required ? '<span style="color:#22C55E;font-weight:700;font-size:16px;">✓</span>' : '<span style="color:#94A3B8;font-size:16px;">○</span>'}</td>
+      <td style="font-weight:600;">${c.document}</td>
+      <td style="color:#334155;">${c.description}</td>
+      <td style="font-size:12px;color:#64748B;">${c.reference}</td>
+    </tr>`).join('');
+
+        // ── DRAWINGS TABLE ──
+        document.getElementById('drawingsTable').innerHTML = ta.drawings.keyQuantities.map(q => `
+    <tr>
+      <td style="font-weight:500;">${q.item}</td>
+      <td style="font-weight:700;color:#2563EB;">${q.quantity}</td>
+      <td style="font-size:12px;color:#64748B;">${q.source}</td>
+    </tr>`).join('');
+
+        // ── BOQ ──
+        document.getElementById('boqContent').innerHTML = ta.billOfQuantities.map(g => `
+    <div style="margin-bottom:20px;">
+      <div style="padding:10px 16px;background:#0F172A;color:#FFF;border-radius:8px 8px 0 0;font-size:12px;font-weight:700;letter-spacing:0.05em;">${g.trade}</div>
+      <div class="table-wrapper" style="border-radius:0 0 8px 8px;border-top:none;">
+        <table><thead><tr><th>Item</th><th>Description</th><th>Qty</th><th>Unit</th><th>Rate</th><th>Amount</th></tr></thead>
+        <tbody>${g.items.map(i => `<tr><td style="font-weight:600;color:#64748B;">${i.id}</td><td>${i.description}</td><td>${i.qty}</td><td>${i.unit}</td><td style="font-weight:500;">${i.rate}</td><td style="font-weight:700;">${i.amount}</td></tr>`).join('')}</tbody></table>
+      </div>
+    </div>`).join('');
+
+        // ── REQUIREMENTS TABLE ──
+        document.getElementById('reqTable').innerHTML = ta.requirementsRegister.map(r => `
+    <tr>
+      <td style="font-weight:700;color:#64748B;white-space:nowrap;">${r.id}</td>
+      <td style="max-width:320px;">${r.description}</td>
+      <td style="color:#64748B;">${r.quantityBasis}</td>
+      <td style="font-size:12px;color:#94A3B8;">${r.source}</td>
+      <td><span class="R{r.citation === 'EXPLICIT' ? 'cite-explicit' : 'cite-implicit'}">${r.citation}</span></td>
+    </tr>`).join('');
+
+        // ── CONTRACT RISKS ──
+        document.getElementById('contractRisks').innerHTML = ta.contract.keyRisks.map(r => `
+    <div style="display:flex;align-items:center;gap:16px;padding:14px 16px;border:1px solid #E2E8F0;border-radius:10px;margin-bottom:8px;background:#FFF;">
+      <span class="badge ${r.severity === 'HIGH' ? 'badge-red' : r.severity === 'MEDIUM' ? 'badge-yellow' : 'badge-green'}">${r.severity}</span>
+      <span style="font-size:13px;">${r.risk}</span>
+    </div>`).join('');
+
+        // ── RFI TABLE ──
+        document.getElementById('rfiTable').innerHTML = ta.rfis.map(r => `
+    <tr>
+      <td style="font-weight:700;color:#64748B;white-space:nowrap;">${r.id}</td>
+      <td style="max-width:480px;">${r.question}</td>
+      <td><span class="badge ${r.priority === 'HIGH' ? 'badge-red' : r.priority === 'MEDIUM' ? 'badge-yellow' : 'badge-gray'}">${r.priority}</span></td>
+      <td><span class="badge badge-blue">${r.status}</span></td>
+      <td><button class="btn btn-ghost btn-sm">Mark Resolved</button></td>
+    </tr>`).join('');
+
+        // ── RISKS ──
+        document.getElementById('risksContainer').innerHTML = ta.risks.map(r => `
+    <div class="risk-card">
+      <div class="risk-card-left">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+          <span class="badge ${r.level === 'HIGH' ? 'badge-red' : r.level === 'MEDIUM' ? 'badge-yellow' : 'badge-gray'}">${r.level}</span>
+          <div class="risk-card-title">${r.title}</div>
+        </div>
+        <div class="risk-card-desc">${r.description}</div>
+        <div class="risk-card-mitigation">💡 <strong>Mitigation:</strong> ${r.mitigation}</div>
+      </div>
+    </div>`).join('');
+
+        // ── Navigation ──
+        function showSection(name, el) {
+            document.querySelectorAll('.tender-nav-item').forEach(i => i.classList.remove('active'));
+            document.querySelectorAll('.tender-section').forEach(s => s.classList.remove('active'));
+            el.classList.add('active');
+            document.getElementById('section-' + name).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Detail — SEED</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+
+<body>
+    <div class="app-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <rect width="28" height="28" rx="6" fill="#0F172A" />
+                    <rect x="6" y="6" width="4" height="16" rx="2" fill="white" />
+                    <rect x="13" y="6" width="4" height="16" rx="2" fill="white" opacity="0.5" />
+                    <rect x="20" y="6" width="2" height="16" rx="1" fill="white" opacity="0.3" />
+                </svg>
+                seed
+            </div>
+            <div class="org-selector">
+                <div class="org-selector-left">
+                    <div class="org-avatar">J</div>
+                    <div>
+                        <div class="org-name">J.C. V V</div>
+                        <div class="org-sub">1 organization</div>
+                    </div>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5 7l3 3 3-3" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="projects.html" class="sidebar-link active">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M2 5a2 2 0 012-2h4l2 2h4a2 2 0 012 2v7a2 2 0 01-2 2H4a2 2 0 01-2-2V5z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    Projects
+                </a>
+                <a href="resources.html" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <rect x="2" y="2" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M6 6h6M6 9h6M6 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    Resources
+                </a>
+                <a href="workbook-templates.html" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M4 2h10a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm2 4h6M6 9h6M6 12h4"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Workbook Templates
+                </a>
+            </nav>
+            <div class="sidebar-unlimited" style="margin:12px;">
+                <div class="sidebar-unlimited-header">
+                    <div class="unlimited-dot"></div>
+                    <div class="sidebar-unlimited-title">Unlimited AI Analysis</div>
+                </div>
+                <div class="sidebar-unlimited-desc">No limits — analyse freely</div>
+            </div>
+            <div style="flex:1;"></div>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-footer-link"><svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M8.5 7.5v4M8.5 5.5a.5.5 0 110 1 .5.5 0 010-1" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>Help Center</a>
+                <a href="settings.html" class="sidebar-footer-link"><svg width="17" height="17" viewBox="0 0 17 17"
+                        fill="none">
+                        <path d="M8.5 11a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="currentColor" stroke-width="1.5" />
+                        <path
+                            d="M13.5 8.5c0-.4.2-.8.6-1l.3-.2a.9.9 0 000-1.6l-.3-.2a1.1 1.1 0 01-.6-1V5a.9.9 0 00-.9-.9h-.1a1.1 1.1 0 01-1-.6l-.2-.3a.9.9 0 00-1.6 0l-.2.3a1.1 1.1 0 01-1 .6H8a.9.9 0 00-.9.9v.1c0 .4-.2.8-.6 1l-.3.2a.9.9 0 000 1.6l.3.2c.4.2.6.6.6 1V12a.9.9 0 00.9.9h.1c.4 0 .8.2 1 .6l.2.3a.9.9 0 001.6 0l.2-.3c.2-.4.6-.6 1-.6H12a.9.9 0 00.9-.9v-.1z"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>Settings</a>
+            </div>
+            <div class="sidebar-user">
+                <div class="user-avatar">K</div>
+                <div class="user-info">
+                    <div class="user-name">Koketso Speco</div>
+                    <div class="user-email">speconasdaq@gmail.com</div>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M5 7l3 3 3-3" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main-content">
+            <div class="page-content">
+                <div class="breadcrumb">
+                    <a href="projects.html">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M9 3L5 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Back to Projects
+                    </a>
+                </div>
+
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                    <div class="project-detail-title">
+                        <h1 id="projTitle">Commercial Construction Project</h1>
+                        <span class="badge badge-green" id="projStatus">Tender Analyzed</span>
+                    </div>
+                    <div style="font-size:13px;color:#64748B;" id="projDate">Created Nov 01, 2025</div>
+                </div>
+
+                <div class="sample-banner" id="sampleBanner">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M9 8v4M9 6a.5.5 0 110 1 .5.5 0 010-1" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    <div>
+                        <div class="sample-banner-title">Sample Project</div>
+                        <div class="sample-banner-desc">This is a sample project for demonstration purposes.</div>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchTab('overview', this)">Project Overview</button>
+                    <button class="tab-btn" onclick="switchTab('subcontractors', this)">Subcontractors</button>
+                    <button class="tab-btn" onclick="switchTab('estimate', this)">Estimate</button>
+                    <button class="tab-btn" onclick="switchTab('submission', this)">Submission Analysis</button>
+                </div>
+
+                <!-- TAB: Project Overview -->
+                <div class="tab-panel active" id="tab-overview">
+                    <div class="card" style="padding:24px;margin-bottom:20px;">
+                        <h3 style="font-size:16px;font-weight:700;margin-bottom:4px;">Project Details</h3>
+                        <p style="font-size:13px;color:#64748B;margin-bottom:20px;">Overview of project details</p>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+                            <div>
+                                <div style="font-size:12px;color:#64748B;margin-bottom:4px;">Client</div>
+                                <div style="font-size:14px;font-weight:600;" id="detailClient">ABC Developer</div>
+                            </div>
+                            <div>
+                                <div style="font-size:12px;color:#64748B;margin-bottom:4px;">Industry</div>
+                                <div style="font-size:14px;font-weight:600;" id="detailIndustry">Commercial</div>
+                            </div>
+                            <div>
+                                <div style="font-size:12px;color:#64748B;margin-bottom:4px;">Location</div>
+                                <div style="font-size:14px;font-weight:600;" id="detailLocation">Johannesburg, South Africa
+                                </div>
+                            </div>
+                            <div>
+                                <div style="font-size:12px;color:#64748B;margin-bottom:4px;">Project Size</div>
+                                <div style="font-size:14px;font-weight:600;" id="detailSize">Large (R0M-R0M)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding:24px;margin-bottom:20px;">
+                        <h3 style="font-size:16px;font-weight:700;margin-bottom:4px;">Project Information Identified
+                        </h3>
+                        <div class="info-checklist" style="margin-top:16px;" id="docChecklist"></div>
+                        <p style="font-size:12px;color:#94A3B8;margin-top:16px;">This is the information identified in
+                            the documents uploaded and the analysis will run on these documents</p>
+                    </div>
+
+                    <button class="btn btn-primary" style="width:100%;padding:16px;font-size:15px;border-radius:12px;"
+                        onclick="window.location.href='tender-summary.html?id=proj-001'">
+                        View Project Analysis
+                    </button>
+                    <p style="font-size:12px;color:#94A3B8;text-align:center;margin-top:8px;">Tip: For faster, more
+                        reliable analysis, split very large files into smaller sections (for example by trade or
+                        package).</p>
+                </div>
+
+                <!-- TAB: Subcontractors -->
+                <div class="tab-panel" id="tab-subcontractors">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+                        <div>
+                            <h3 style="font-size:18px;font-weight:700;">Project Work Breakdown Structure</h3>
+                            <p style="font-size:13px;color:#64748B;margin-top:2px;">Organise your project into areas and
+                                procurement packages</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="addSubheading()">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M7 2v10M2 7h10" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Add Sub-heading
+                        </button>
+                    </div>
+                    <div id="wbsContainer"></div>
+                </div>
+
+                <!-- TAB: Estimate -->
+                <div class="tab-panel" id="tab-estimate">
+                    <div class="sub-tabs">
+                        <button class="sub-tab-btn active" onclick="switchSubTab('pricing', this, 'estimate')">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <rect x="1" y="1" width="13" height="13" rx="2" stroke="currentColor"
+                                    stroke-width="1.3" />
+                                <path d="M4 5h7M4 7.5h7M4 10h4" stroke="currentColor" stroke-width="1.3"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Pricing Schedule
+                        </button>
+                        <button class="sub-tab-btn" onclick="switchSubTab('projresources', this, 'estimate')">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M2 2h11M2 5h7M2 8h9M2 11h5" stroke="currentColor" stroke-width="1.3"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Project Resources
+                        </button>
+                    </div>
+
+                    <!-- Pricing Schedule -->
+                    <div id="subtab-pricing">
+                        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+                            <div>
+                                <h3 style="font-size:17px;font-weight:700;">Pricing Schedule</h3>
+                                <p style="font-size:13px;color:#64748B;">Direct costs and subcontract packages</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm">+ Add Item</button>
+                        </div>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Trade</th>
+                                        <th>Qty</th>
+                                        <th>Unit</th>
+                                        <th>Rate</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="pricingTable"></tbody>
+                            </table>
+                        </div>
+                        <div style="margin-top:16px;display:flex;justify-content:flex-end;">
+                            <div
+                                style="background:#0F172A;color:#FFF;padding:16px 24px;border-radius:12px;text-align:right;min-width:240px;">
+                                <div style="font-size:12px;opacity:0.6;margin-bottom:4px;">TOTAL ESTIMATE</div>
+                                <div style="font-size:24px;font-weight:800;color:#86EFAC;">R15,485,000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Resources -->
+                    <div id="subtab-projresources" style="display:none;">
+                        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+                            <div>
+                                <h3 style="font-size:17px;font-weight:700;">Project Resource Library</h3>
+                                <p style="font-size:13px;color:#64748B;">Resources copied from company library for this
+                                    project</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm">+ Add Resource</button>
+                        </div>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" /></th>
+                                        <th>Description</th>
+                                        <th>Type</th>
+                                        <th>Unit</th>
+                                        <th>Rate/value</th>
+                                        <th>Comments</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="resourceTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB: Submission Analysis -->
+                <div class="tab-panel" id="tab-submission">
+                    <div class="sub-tabs">
+                        <button class="sub-tab-btn active" onclick="switchSubTab('upload', this, 'submission')">Upload
+                            Documents</button>
+                        <button class="sub-tab-btn" onclick="switchSubTab('existing', this, 'submission')">Use Existing
+                            Estimate</button>
+                    </div>
+
+                    <div id="subtab-upload">
+                        <div class="upload-zone" onclick="triggerUpload()">
+                            <div class="upload-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 15V3m0 0L8 7m4-4l4 4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div style="font-size:15px;font-weight:600;">Upload your estimate or submission documents
+                            </div>
+                            <div style="font-size:13px;color:#64748B;">Drag and drop files, or click to
+                                browse<br>Supports PDF, Excel, Word documents</div>
+                            <button class="btn btn-secondary" onclick="event.stopPropagation();triggerUpload()">Choose
+                                Files</button>
+                        </div>
+                        <input type="file" id="fileInput" multiple accept=".pdf,.xlsx,.xls,.docx,.doc"
+                            style="display:none;" onchange="handleFiles(this)" />
+                        <div id="uploadedFiles" style="margin-top:16px;display:flex;flex-direction:column;gap:8px;">
+                        </div>
+                    </div>
+
+                    <div id="subtab-existing" style="display:none;">
+                        <div class="card" style="padding:24px;">
+                            <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">Validate Against Tender
+                                Requirements</h3>
+                            <p style="font-size:13px;color:#64748B;margin-bottom:20px;">Select your estimate items and
+                                we'll check them against the 44 requirements identified in your tender analysis.</p>
+                            <div style="display:flex;flex-direction:column;gap:10px;" id="validationItems"></div>
+                            <div
+                                style="margin-top:20px;padding:16px;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:12px;">
+                                <div style="font-size:14px;font-weight:700;color:#15803D;margin-bottom:4px;">✅ 38 of 44
+                                    requirements matched</div>
+                                <div style="font-size:13px;color:#15803D;">6 requirements need attention before
+                                    submission.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/data.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const projId = params.get('id') || 'proj-001';
+        const proj = SEED_DATA.projects.find(p => p.id === projId) || SEED_DATA.projects[0];
+
+        // Set header
+        document.getElementById('projTitle').textContent = proj.name;
+        document.getElementById('projDate').textContent = 'Created ' + proj.created;
+        document.getElementById('detailClient').textContent = proj.client;
+        document.getElementById('detailIndustry').textContent = proj.industry;
+        document.getElementById('detailLocation').textContent = proj.location;
+        document.getElementById('detailSize').textContent = proj.projectSize;
+        if (!proj.isSample) document.getElementById('sampleBanner').style.display = 'none';
+        if (proj.status !== 'analyzed') {
+            document.getElementById('projStatus').textContent = 'Pending Analysis';
+            document.getElementById('projStatus').className = 'badge badge-gray';
+        }
+
+        // Documents checklist
+        const checkList = document.getElementById('docChecklist');
+        if (proj.documents.length) {
+            checkList.innerHTML = proj.documents.map(d => `
+      <div class="info-checklist-item">
+        <div class="check-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        ${d.type} (${d.count} document${d.count > 1 ? 's' : ''})
+      </div>`).join('');
+        } else {
+            checkList.innerHTML = '<p style="font-size:13px;color:#94A3B8;">No documents uploaded yet. Upload tender documents to begin analysis.</p>';
+        }
+
+        // WBS
+        const wbsCon = document.getElementById('wbsContainer');
+        wbsCon.innerHTML = SEED_DATA.wbsData.map(s => `
+    <div class="wbs-section">
+      <div class="wbs-section-header">
+        <div class="wbs-section-title">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 5a2 2 0 012-2h8a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" stroke="#64748B" stroke-width="1.3"/></svg>
+          ${s.name}
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <button class="btn btn-secondary btn-sm" onclick="event.stopPropagation()">+ Add Package</button>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      ${s.packages.map(p => `
+        <div class="wbs-package">
+          <div class="wbs-package-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2l5 2.5v5L7 12 2 9.5v-5L7 2z" stroke="currentColor" stroke-width="1.3"/></svg></div>
+          <div class="wbs-package-info"><div class="wbs-package-name">${p.name}</div><div class="wbs-package-desc">${p.desc}</div></div>
+          <div class="wbs-package-code">${p.code}</div>
+          <div class="wbs-package-type">${p.type}</div>
+          <div class="wbs-package-status">
+            ${p.status === 'Awarded' ? '<span class="badge badge-navy">Awarded</span>' : p.status === 'Draft' ? '<span class="badge badge-gray">Draft</span>' : '<span style="color:#94A3B8;font-size:13px;">N/A</span>'}
+          </div>
+          <div class="wbs-package-actions">
+            <button class="btn btn-ghost btn-icon btn-sm"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 10l8.5-8.5a1.5 1.5 0 012 2L4 12H2v-2z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="btn btn-ghost btn-icon btn-sm"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 3.5h10M5.5 3.5V2h3v1.5M5 6v4.5M9 6v4.5M3 3.5l.5 8h7l.5-8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>`).join('')}
+    </div>`).join('');
+
+        // Pricing table
+        const pricingRows = [
+            { desc: 'Site Establishment & Preliminaries', trade: 'Preliminaries', qty: '1', unit: 'LS', rate: 'R20,000', amount: 'R20,000' },
+            { desc: 'Excavation to basement', trade: 'Structural', qty: '3,200', unit: 'm3', rate: 'R8', amount: 'R53,600' },
+            { desc: 'Structural Concrete – slabs & walls', trade: 'Structural', qty: '1,460', unit: 'm3', rate: 'R90', amount: 'R69,400' },
+            { desc: 'Reinforcement supply & fix', trade: 'Structural', qty: '185', unit: 't', rate: 'R,850', amount: 'R42,250' },
+            { desc: 'Curtain Wall System', trade: 'Façade', qty: '4,800', unit: 'm2', rate: 'R50', amount: 'R,560,000' },
+            { desc: 'HVAC – Mechanical Services', trade: 'Building Services', qty: '1', unit: 'LS', rate: 'R,850,000', amount: 'R,850,000' },
+            { desc: 'Electrical & Comms', trade: 'Building Services', qty: '1', unit: 'LS', rate: 'R,420,000', amount: 'R,420,000' },
+            { desc: 'Fire Protection System', trade: 'Building Services', qty: '1', unit: 'LS', rate: 'R80,000', amount: 'R80,000' },
+            { desc: 'Internal Fitout – Level 1-3', trade: 'Fitout', qty: '12,000', unit: 'm2', rate: 'R20', amount: 'R,040,000' },
+            { desc: 'Overheads & Margin', trade: 'Management', qty: '1', unit: 'LS', rate: 'R49,750', amount: 'R49,750' },
+        ];
+        document.getElementById('pricingTable').innerHTML = pricingRows.map(r => `
+    <tr>
+      <td style="font-weight:500;">${r.desc}</td>
+      <td><span class="badge badge-gray">${r.trade}</span></td>
+      <td>${r.qty}</td><td>${r.unit}</td>
+      <td style="font-weight:500;">${r.rate}</td>
+      <td style="font-weight:700;color:#0F172A;">${r.amount}</td>
+    </tr>`).join('');
+
+        // Resources table
+        document.getElementById('resourceTable').innerHTML = SEED_DATA.resources.map(r => `
+    <tr>
+      <td><input type="checkbox" /></td>
+      <td style="font-weight:500;">${r.description}</td>
+      <td><span class="badge type-${r.type.toLowerCase()}">${r.type}</span></td>
+      <td>${r.unit}</td>
+      <td style="font-weight:600;">${r.rate}</td>
+      <td style="color:#64748B;">${r.comments || '--'}</td>
+      <td>
+        <button class="btn btn-ghost btn-sm"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1 10l8-8a1.5 1.5 0 012 2L3 12H1v-2z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+      </td>
+    </tr>`).join('');
+
+        // Validation items
+        const valItems = ['Site Establishment & Preliminaries', 'Excavation Works', 'Structural Concrete', 'Reinforcement', 'Curtain Wall System', 'HVAC', 'Electrical', 'Fire Protection'];
+        document.getElementById('validationItems').innerHTML = valItems.map((v, i) => `
+    <div style="display:flex;align-items:center;gap:12px;padding:10px;background:${i < 5 ? '#F0FDF4' : '#FEF2F2'};border:1px solid ${i < 5 ? '#BBF7D0' : '#FECACA'};border-radius:8px;">
+      <span style="font-size:16px;">${i < 5 ? '✅' : '❌'}</span>
+      <span style="font-size:13px;font-weight:500;">${v}</span>
+      ${i < 5 ? '<span style="margin-left:auto;font-size:11px;color:#15803D;font-weight:600;">Matched to REQ-00' + (i + 1) + '</span>' : '<span style="margin-left:auto;font-size:11px;color:#B91C1C;font-weight:600;">Not found in estimate</span>'}
+    </div>`).join('');
+
+        // Tab / SubTab switching
+        function switchTab(name, btn) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('tab-' + name).classList.add('active');
+        }
+
+        function switchSubTab(name, btn, group) {
+            const container = document.getElementById('tab-' + group);
+            container.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            // toggle sub panels
+            const panels = { estimate: ['pricing', 'projresources'], submission: ['upload', 'existing'] };
+            (panels[group] || []).forEach(id => {
+                const el = document.getElementById('subtab-' + id);
+                if (el) el.style.display = id === name ? 'block' : 'none';
+            });
+        }
+
+        function triggerUpload() { document.getElementById('fileInput').click(); }
+        function handleFiles(input) {
+            const container = document.getElementById('uploadedFiles');
+            Array.from(input.files).forEach(f => {
+                const div = document.createElement('div');
+                div.style.cssText = 'display:flex;align-items:center;gap:12px;padding:12px 16px;background:#FFF;border:1px solid #E2E8F0;border-radius:10px;';
+                div.innerHTML = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 2h9l4 4v12a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="#3B82F6" stroke-width="1.5"/><path d="M13 2v4h4" stroke="#3B82F6" stroke-width="1.5"/></svg>
+        <div style="flex:1;"><div style="font-size:13px;font-weight:600;">${f.name}</div><div style="font-size:11px;color:#64748B;">${(f.size / 1024).toFixed(0)} KB</div></div>
+        <span class="badge badge-green animate-pulse">Analysing...</span>`;
+                container.appendChild(div);
+                setTimeout(() => { div.querySelector('.badge').textContent = '✓ Analysis Ready'; div.querySelector('.badge').classList.remove('animate-pulse'); }, 2000 + Math.random() * 2000);
+            });
+        }
+
+        function addSubheading() {
+            const name = prompt('Enter section name:');
+            if (!name) return;
+            SEED_DATA.wbsData.push({ id: 'new-' + Date.now(), name, packages: [] });
+            // re-render
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>
